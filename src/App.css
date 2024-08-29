@@ -1,38 +1,81 @@
+/* Base Styles */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #000000; /* Black background for the entire app */
+  color: #ffffff; /* White text color */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Header Styles */
+.App-header {
+  background-color: #282c34; /* Dark background for header */
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Footer Styles */
+.App-footer {
+  background-color: #ffffff; /* White background for footer */
+  color: #000000; /* Black text color for footer */
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Card Styles */
+.card {
+  background-color: #ffffff; /* White background for cards */
+  color: #000000; /* Black text color for cards */
+  border-radius: 8px; /* Rounded corners for cards */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Button Styles */
+.button {
+  background-color: #ffffff; /* White background for buttons */
+  color: #000000; /* Black text color for buttons */
+  border: 1px solid #cccccc; /* Light gray border */
+  padding: 0.5rem 1rem; /* Padding inside buttons */
+  border-radius: 4px; /* Rounded corners for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.button:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+/* Badge Styles */
+.badge {
+  background-color: #cccccc; /* Light gray background for badges */
+  color: #000000; /* Black text color for badges */
+  border-radius: 12px; /* Rounded corners for badges */
+  padding: 0.25rem 0.5rem; /* Padding inside badges */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .card {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .button {
+    padding: 0.25rem 0.5rem;
   }
 }
